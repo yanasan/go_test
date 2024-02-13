@@ -3,9 +3,7 @@ version: '3.9'
 services:
   app:
     build: .
-    container_name: gurugurume_container
-    ports: 
-      - "8080:8080"
+    container_name: go_test
     volumes:
       - .:/app
     tty: true

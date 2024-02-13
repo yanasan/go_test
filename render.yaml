@@ -10,7 +10,7 @@ services:
     name: go_test
     env: Go
     region: singapore
-    buildCommand: './render-build.sh'
+    buildCommand: './render-build.sh && ./app'
     plan: free
     branch: main
     envVars:
@@ -19,3 +19,5 @@ services:
           name: go_test
           property: connectionString
     autoDeploy: true
+    ports:
+      - "8080"
