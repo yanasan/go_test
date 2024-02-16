@@ -4,6 +4,8 @@ services:
   app:
     build: .
     container_name: go_test
+    ports: 
+      - "8080:8080"
     volumes:
       - .:/app
     tty: true
