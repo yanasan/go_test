@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
-# exit on error
-set -o errexit
+# #!/usr/bin/env bash
+# # exit on error
+# set -o errexit
 
-docker-compose build
-docker-compose up -d
+# docker-compose build
+# docker-compose up -d

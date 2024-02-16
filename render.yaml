@@ -1,23 +1,23 @@
-databases:
-  - name: go_test
-    region: singapore
-    plan: free
-    databaseName: go_test
-    user: go_test_4494_user
+# databases:
+#   - name: go_test
+#     region: singapore
+#     plan: free
+#     databaseName: go_test
+#     user: go_test_4494_user
 
-services:
-  - type: web
-    name: go_test
-    env: Go
-    region: singapore
-    buildCommand: './render-build.sh && ./app'
-    plan: free
-    branch: main
-    envVars:
-      - key: postgres://go_test_4494_user:IBmy2TnEtfAOncDVOXkBrtKRQ5M38QiY@dpg-cn4u9v2cn0vc738u76sg-a/go_test_4494
-        fromDatabase:
-          name: go_test
-          property: connectionString
-    autoDeploy: true
-    ports:
-      - "8080"
+# services:
+#   - type: web
+#     name: go_test
+#     env: Go
+#     region: singapore
+#     buildCommand: './render-build.sh && ./app'
+#     plan: free
+#     branch: main
+#     envVars:
+#       - key: postgres://go_test_4494_user:IBmy2TnEtfAOncDVOXkBrtKRQ5M38QiY@dpg-cn4u9v2cn0vc738u76sg-a/go_test_4494
+#         fromDatabase:
+#           name: go_test
+#           property: connectionString
+#     autoDeploy: true
+#     ports:
+#       - "8080"
