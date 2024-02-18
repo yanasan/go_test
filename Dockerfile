@@ -12,4 +12,4 @@ COPY . .
 
 RUN go build -o main
 
-# CMD ["./main"]
+CMD ["./main"]
